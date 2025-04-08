@@ -1,0 +1,49 @@
+.calendar-month {
+  &-week-list {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+
+    &-item {
+      flex: 1;
+      padding: 20px 50px;
+      text-align: left;
+      color: #7d7d7f;
+    }
+  }
+
+  &-body {
+    &-row {
+      display: flex;
+      height: 100px;
+    }
+
+    &-cell {
+      flex: 1;
+      color: #ccc;
+      border: 1px solid #eee;
+      overflow: hidden;
+
+      &-date {
+        padding: 20px;
+
+        &-selected {
+          width: 28px;
+          height: 28px;
+          background: blue;
+          color: #fff;
+          text-align: center;
+          line-height: 28px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+
+      &-current {
+        color: #000;
+      }
+    }
+  }
+}
